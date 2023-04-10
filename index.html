@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-theme="pastel"
+  class="bg-gradient-to-br from-indigo-200 via-red-200 to-yellow-100"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Crimson+Text&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./favicon.jpg" />
+    <title>Invisible text decrypter</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen">
+      <div class="form-control bg-white p-10 rounded-lg font-mono">
+        <h1
+          class="flex justify-center text-4xl mb-3 text-rose-400"
+          style="font-family: 'Amatic SC', cursive"
+        >
+          Invisible text encrypter
+        </h1>
+        <label class="label">
+          <span
+            class="label-text text-xl mb-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-indigo-300 via-red-300 to-yellow-200"
+            >Input</span
+          >
+        </label>
+        <textarea
+          type="text"
+          placeholder="Nội dung"
+          class="text-rose-400 textarea textarea-bordered w-full max-w-xs placeholder-rose-300 border-rose-300 hover:outline-rose-300 focus:outline-rose-300 rounded-lg"
+          onchange="encodeText()"
+          id="input"
+        /></textarea>
+        <label class="label">
+          <span
+            class="label-text text-xl my-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-indigo-300 via-red-300 to-yellow-200"
+            >Output</span
+          >
+        </label>
+        <textarea
+          class="output textarea border-rose-300 placeholder-rose-300 hover:outline-rose-300 focus:outline-rose-300 rounded-lg text-rose-400"
+          placeholder="Chưa được mã hoá"
+          id="output"
+        ></textarea>
+        <a
+          class="link text-rose-400 flex justify-center mt-5 no-underline"
+          href="https://catcat1204.github.io/decode-invisible-text/"
+          >Decrypt</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
