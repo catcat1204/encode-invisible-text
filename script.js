@@ -129,7 +129,18 @@ const checkEncode = (s) => {
 
   return encodedPattern.exec(s);
 };
-function encodeText() {
+
+function clearInput() {
+  document.getElementById("input").value = "";
+}
+function clearOutput() {
+  document.getElementById("output").value = "";
+}
+function copyOutput() {
+  document.getElementById("output").select();
+  document.execCommand("copy");
+}
+function submitInput() {
   const inputContent = document.getElementById("input").value;
   let matches = shouldEncodePattern.exec(inputContent);
   if (inputContent.length > 1 && matches) {
